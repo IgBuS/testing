@@ -1,0 +1,10 @@
+{
+    "name": "testing/testing",
+    "description": "test",
+    "autoload": {
+        "files": [
+            "src/StringUtils.php"
+        ]
+    },
+    "require": {}
+}
