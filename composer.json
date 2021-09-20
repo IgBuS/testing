@@ -6,5 +6,7 @@
             "src/StringUtils.php"
         ]
     },
-    "require": {}
+    "require": {
+        "webmozart/assert": "^1.10"
+    }
 }

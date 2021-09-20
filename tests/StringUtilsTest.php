@@ -3,13 +3,10 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Testing\StringUtils;
+use Webmozart\Assert\Assert;
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::eq(StringUtils\capitalize('hello'), 'Hello');
+Assert::eq(StringUtils\capitalize(''),'');
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
 
 echo 'Все тесты пройдены!';
